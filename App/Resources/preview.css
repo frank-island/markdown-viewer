@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(47, 129, 247, 0.12), transparent 22rem),
+    radial-gradient(circle at bottom right, rgba(255, 140, 66, 0.12), transparent 24rem),
+    transparent;
+}
+
+.markdown-body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  max-width: none;
+  margin: 0;
+  padding: 28px 32px 40px;
+  background: transparent;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-body pre {
+  overflow: auto;
+  border-radius: 12px;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: "SF Mono", "Monaco", "Menlo", monospace;
+}
+
+.markdown-body table {
+  display: table;
+  width: max-content;
+  max-width: 100%;
+}
+
+@media (max-width: 720px) {
+  .markdown-body {
+    padding: 18px 20px 28px;
+  }
+}
