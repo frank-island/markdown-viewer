@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markdown App Icon Concepts</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0c1117;
+      --panel: #131b24;
+      --line: #243142;
+      --text: #edf3fb;
+      --muted: #9fb2c7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "SF Pro Display", "Avenir Next", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(68, 138, 255, 0.16), transparent 24rem),
+        radial-gradient(circle at bottom right, rgba(255, 122, 77, 0.14), transparent 26rem),
+        var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      width: min(1200px, calc(100vw - 48px));
+      margin: 0 auto;
+      padding: 40px 0 60px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      margin: 0 0 24px;
+      max-width: 48rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(19, 27, 36, 0.96), rgba(12, 17, 23, 0.9));
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+    }
+
+    .thumb {
+      display: block;
+      width: 100%;
+      border-radius: 22px;
+      overflow: hidden;
+      background: #0a0f15;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .thumb img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      margin: 14px 0 6px;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Markdown Icon Concepts</h1>
+    <p>Open this file in any browser to compare the directions. Each icon is a 1024px SVG, so the winner can be turned into an app icon set without redrawing from scratch.</p>
+
+    <section class="grid">
+      <article class="card">
+        <a class="thumb" href="./aurora-fold.svg"><img src="./aurora-fold.svg" alt="Aurora Fold icon"></a>
+        <h2>Aurora Fold</h2>
+        <p>Cold neon document icon with code brackets and a bright slash. Most overtly “Markdown app” of the set.</p>
+        <span class="tag">Sharp / modern / clear</span>
+      </article>
+
+      <article class="card">
+        <a class="thumb" href="./ember-signal.svg"><img src="./ember-signal.svg" alt="Ember Signal icon"></a>
+        <h2>Ember Signal</h2>
+        <p>Warmer, louder direction built around a glowing note and broadcast arcs. Feels more like a creative tool.</p>
+        <span class="tag">Warm / expressive / bold</span>
+      </article>
+
+      <article class="card">
+        <a class="thumb" href="./blueprint-stack.svg"><img src="./blueprint-stack.svg" alt="Blueprint Stack icon"></a>
+        <h2>Blueprint Stack</h2>
+        <p>Technical stacked-sheets concept with grid energy, hash, brackets, and a construction-plan vibe.</p>
+        <span class="tag">Technical / precise / bright</span>
+      </article>
+
+      <article class="card">
+        <a class="thumb" href="./obsidian-ribbon.svg"><img src="./obsidian-ribbon.svg" alt="Obsidian Ribbon icon"></a>
+        <h2>Obsidian Ribbon</h2>
+        <p>Darker, calmer direction with a ribbon-like “M” gesture across the page. Cleaner and more premium-feeling.</p>
+        <span class="tag">Minimal / premium / moody</span>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

@@ -14,6 +14,8 @@ PLIST_BUDDY="/usr/libexec/PlistBuddy"
 
 mkdir -p "$MACOS_DIR" "$RESOURCES_DIR"
 
+"$ROOT/scripts/generate_app_icon.sh"
+
 swiftc \
   -sdk "$SDK" \
   -target arm64-apple-macos14.0 \

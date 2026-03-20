@@ -92,6 +92,7 @@ support_sources = [
 ]
 
 resource_files = [
+  "AppIcon.icns",
   "marked.min.js",
   "github-markdown.min.css",
   "preview.css",
